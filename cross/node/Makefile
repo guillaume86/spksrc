@@ -10,7 +10,6 @@ COMMENT  = Evented I/O for V8 javascript.
 LICENSE  =
 
 # Configure
-PRE_CONFIGURE_TARGET = myPreConfigure
 CONFIGURE_ARGS = --without-snapshot --dest-cpu=arm --dest-os=linux
 
 # Compile
@@ -20,10 +19,6 @@ COMPILE_TARGET = myCompile
 INSTALL_TARGET = myInstall
 
 include ../../mk/spksrc.cross-cc.mk
-
-.PHONY: myPreConfigure
-myPreConfigure:
-	$(RUN) autoconf
 
 .PHONY: myCompile
 myCompile:
