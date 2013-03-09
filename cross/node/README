@@ -1,0 +1,6 @@
+What works:
+1. rename patches to patches_ to not apply patch the first time
+2. run make arch-88f6281
+3. It will error with a 'ld bad -rpath option'
+4. Apply the patch
+5. run make arch-88f6281

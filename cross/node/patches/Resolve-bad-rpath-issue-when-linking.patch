@@ -1,0 +1,19 @@
+*** common.gypi.orig	2013-03-08 20:58:10.000000000 +0100
+--- common.gypi	2013-03-08 20:58:47.000000000 +0100
+***************
+*** 164,170 ****
+        [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
+          'cflags': [ '-Wall', '-pthread', ],
+          'cflags_cc': [ '-fno-rtti', '-fno-exceptions' ],
+!         'ldflags': [ '-pthread', '-rdynamic' ],
+          'conditions': [
+            [ 'target_arch=="ia32"', {
+              'cflags': [ '-m32' ],
+--- 164,170 ----
+        [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
+          'cflags': [ '-Wall', '-pthread', ],
+          'cflags_cc': [ '-fno-rtti', '-fno-exceptions' ],
+!         'ldflags': [ '-pthread' ],
+          'conditions': [
+            [ 'target_arch=="ia32"', {
+              'cflags': [ '-m32' ],
