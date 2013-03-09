@@ -1,8 +1,6 @@
-lnk:bin/node
 bin:bin/node
 bin:bin/node-waf
 lnk:bin/npm
-bin:bin/npm
 rsc:include/node/ares.h
 rsc:include/node/ares_version.h
 rsc:include/node/eio-emul.h
